@@ -6,7 +6,7 @@ import torch
 
 app = Flask(__name__)
 
-model = whisper.load_model("base")
+model = whisper.load_model("medium")
 
 def SpeechToText(audio):
     time.sleep(1)
