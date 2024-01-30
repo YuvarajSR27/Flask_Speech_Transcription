@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Own Projects\Flask_Python\venv"
+VIRTUAL_ENV="D:\Own Projects\Flask_Python_Final\Flask_Speech_Transcription\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
