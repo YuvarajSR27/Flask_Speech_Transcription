@@ -13,3 +13,5 @@ fastapi
 python-multipart
 uvicorn
 typing-extensions<5,>=4.7
+openai-whisper
+gradio
