@@ -1,0 +1,11 @@
+# Dockerfile_streamlit
+FROM python:3.11.6
+
+WORKDIR /venv  
+
+COPY ./app/design /streamlit_ui  
+COPY ./app/requirements_streamlit /requirements_streamlit  
+
+RUN pip install -r /requirements_streamlit/requirements_streamlit.txt --use-deprecated=legacy-resolver
+
+CMD ["streamlit", "run", "/venv/app/design/streamlit_ui.py"]

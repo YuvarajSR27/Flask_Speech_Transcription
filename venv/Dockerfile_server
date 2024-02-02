@@ -1,0 +1,11 @@
+# Dockerfile_server
+FROM python:3.11.6
+
+WORKDIR /venv  
+
+COPY ./app/server /server 
+COPY ./app/requirements_server /requirements_server 
+
+RUN pip install -r /requirements_server/requirements_server.txt --use-deprecated=legacy-resolver
+
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "server:app"]
