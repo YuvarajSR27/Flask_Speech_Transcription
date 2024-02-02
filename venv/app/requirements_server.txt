@@ -1,0 +1,17 @@
+flask
+gunicorn
+whisper
+openai-whisper
+waitress
+numba
+numpy
+torch
+tqdm
+cohere
+openai
+kaleido
+tensorflow
+fastapi
+python-multipart
+uvicorn
+typing-extensions<5,>=4.7
